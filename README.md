@@ -1,10 +1,13 @@
-# Prerequisites
-#
+# Project Architecture
+
+![Architecture Diagram](vagrant\VProfileProjectArchitecture.jpg)
+
+# Versions of the technologies
 - JDK 11 
 - Maven 3 
 - MySQL 8
 
-# Technologies 
+# Services used
 - Spring MVC
 - Spring Security
 - Spring Data JPA
@@ -15,11 +18,11 @@
 - Memcached
 - Rabbitmq
 - ElasticSearch
-# Database
-Here,we used Mysql DB 
-sql dump file:
-- /src/main/resources/db_backup.sql
-- db_backup.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < db_backup.sql
+- Nginx
 
-
+# Order for manual provisioning using vagrant
+1. MySQL (Database SVC)
+2. Memcached (DB Caching SVC)
+3. RabbitMQ (Broker/Queue SVC)
+4. Apache Tomcat (Application SVC)
+5. Nginx (Web SVC)
