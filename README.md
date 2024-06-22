@@ -1,6 +1,6 @@
 # Project Architecture
 
-![Architecture Diagram](vagrant\VProfileProjectArchitecture.jpg)
+![Architecture Diagram](VProfileProjectArchitecture.jpg)
 
 # Versions of the technologies
 - JDK 11 
